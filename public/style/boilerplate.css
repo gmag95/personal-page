@@ -43,7 +43,7 @@ li a {
 }
 
 #bottom-shape {
-    width: 100%;
+    width: 100vw;
     background-color: ghostwhite;
 }
 

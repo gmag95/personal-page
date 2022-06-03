@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style/boilerplate.css">
 </head>
 <body style="overflow-x:hidden">
-    <div class="container-fluid gx-0 d-flex flex-column" id="main-container">
+    <div class="container-fluid d-flex flex-column" id="main-container">
         <nav class="navbar navbar-expand-sm p-0 fixed-top navbar-dark">
             <div class="container">
               <a class="navbar-brand" href="/">Portfolio website</a>
@@ -43,10 +43,14 @@
             </div>
           </nav>
           <%- body %>
-        <svg width="500" height="100" viewBox="0 0 500 100" preserveAspectRatio="none" class="mt-auto" id="bottom-shape">
-            <path d="M0,100 L0,50 Q250,-50 500,50 L500,100 Z" fill="#515e66" />
-        </svg>
-    </div>
+          <div class="row mt-auto">
+            <div class="col p-0">
+              <svg width="500" height="100" viewBox="0 0 500 100" preserveAspectRatio="none" id="bottom-shape">
+                <path d="M0,100 L0,50 Q250,-50 500,50 L500,100 Z" fill="#515e66" />
+              </svg>
+            </div>
+          </div>
+  </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

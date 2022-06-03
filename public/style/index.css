@@ -17,12 +17,14 @@ img {
 #bottom-div {
     position: absolute;
     margin: 0 auto;
-    bottom: 25px;
+    bottom: 18px;
 }
 
 #bottom-button {
     border-radius: 50%;
     border-width: 0;
+    position: absolute;
+    bottom: 10px;
 }
 
 #homepage-title, .category-title {
@@ -52,7 +54,7 @@ img {
     border-radius: 0.2em;
     font-weight: 600;
     font-size: 1.1em;
-    line-height: 1em;
+    line-height: 1.1em;
 }
 
 .carousel-indicators button {
