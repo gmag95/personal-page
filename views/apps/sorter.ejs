@@ -1,0 +1,32 @@
+<% layout("layouts/boilerplate") %>
+
+<link rel="stylesheet" href="style/apps/sorter.css">
+
+<div class="row mt-5" id="title-row">
+    <div class="col text-center"><h2 id="title" class="py-3">Sorter</h2></div>
+</div>
+<div class="row d-flex justify-content-center">
+    <div class="col-11 col-md-8 d-flex justify-content-center">
+        <div class="box d-flex justify-content-evenly">
+        </div>
+    </div>
+</div>
+<div class="row my-3 justify-content-center">
+    <div class="col-11 col-md-8 d-flex justify-content-center" id="options-col">
+        <select class="form-select mx-1" id="algo_selector">
+            <option selected hidden value="0">Algorithm</option>
+            <option value="1">Bubble</option>
+            <option value="2">Selection</option>
+            <option value="3">Insertion</option>
+            <option value="4">Merge</option>
+            <option value="5">Quick</option>
+            <option value="6">Count</option>
+        </select>
+        <button class="btn btn-light mx-1" id="start_button">Start</button>
+        <button class="btn btn-light mx-1" id="reset_button">Reset</button>
+    </div>
+</div>
+<div class="row mb-3 hidden" id="end_row">
+    <div class="col d-flex justify-content-center"></div>
+</div>
+<script type="module" src="/js/apps/sorter.js"></script>

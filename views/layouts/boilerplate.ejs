@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/boilerplate.css">
+</head>
+<body style="overflow-x:hidden">
+    <div class="container-fluid gx-0 d-flex flex-column" id="main-container">
+        <nav class="navbar navbar-expand-sm p-0 fixed-top navbar-dark">
+            <div class="container">
+              <a class="navbar-brand" href="/">Portfolio website</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/" id="home-link">Home page</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="https://accounting-analyzer.herokuapp.com/" id="analyzer-link">Analyzer</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="https://commenter-application.herokuapp.com/" id="commenter-link">Commenter</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="apps-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">Small apps</a>
+                    <ul class="dropdown-menu" aria-labelledby="apps-link">
+                      <li><a class="dropdown-item" href="/shortest-path">Shortest path finder</a></li>
+                      <li><a class="dropdown-item" href="/sudoku">Sudoku</a></li>
+                      <li><a class="dropdown-item" href="/sorter">Sorter</a></li>
+                      <li><a class="dropdown-item" href="/flood-it">Flood it</a></li>
+                      <li><a class="dropdown-item" href="/blackjack">Blackjack</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <%- body %>
+        <svg width="500" height="100" viewBox="0 0 500 100" preserveAspectRatio="none" class="mt-auto" id="bottom-shape">
+            <path d="M0,100 L0,50 Q250,-50 500,50 L500,100 Z" fill="#515e66" />
+        </svg>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<% layout("layouts/boilerplate") %>
+
+<div class="row d-flex justify-content-center my-5" id="content-row">
+    <div class="col-11 col-lg-7 d-flex flex-column align-items-center" id="content-col">
+        <h2 class="my-5 text-center" id="homepage-title">Welcome to my personal page!</h2>
+        <p class="text-center my-0 w-75" id="homepage-subtitle">On this website you will find a link to two full websites and a collection of small programs written in javascript. Scroll down to find out more!</p>
+        <img class="my-4" src="/img/line.svg" alt="">
+        <h3 class="category-title my-0">Analyzer</h3>
+        <p class="text-center my-4" id="application-subtitle">
+            The accounting analyzer application is a software that performs the ordinary bookkeping operation for a selected Company.
+        </p>
+        <p class="text-center" id="application-subtitle">
+            PostgreSQL is used to store the data and load the automatic postings at the beginning of each month (year end closing and zeroing of the provisional amounts loaded in the 0B accounts at each month). The frontend also allows the user to quickly add and delete postings while its analytics section gives insights on the past and current performance of the Company.
+        </p>
+        <a href="https://accounting-analyzer.herokuapp.com/">
+          <img src="img/screenshots/analyzer.png" class="d-block w-100" alt="...">
+        </a>
+        <h3 class="category-title my-4">Commenter</h3>
+        <p class="text-center mb-4" id="application-subtitle">Website that allows the users to post comments and read those uploaded by others. Includes full CRUD functionality and login system, both based on MongoDB.</p>
+        <a href="https://commenter-application.herokuapp.com/">
+          <img src="img/screenshots/commenter.png" class="d-block w-100" alt="...">
+        </a>
+        <h3 class="category-title my-4">Applications</h3>
+        <p class="text-center mb-4" id="application-subtitle">A collection of small programs written in javascript.</p>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="/shortest-path">
+                  <img src="img/screenshots/shortest-path.png" class="d-block w-100" alt="...">
+                </a>
+                <div class="carousel-caption d-none d-md-block">
+                    <p>Shortest path finder</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="/sudoku">
+                  <img src="img/screenshots/sudoku.png" class="d-block w-100" alt="...">
+                </a>
+                <div class="carousel-caption d-none d-md-block">
+                    <p>Sudoku</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="/sorter">
+                  <img src="img/screenshots/sorter.png" class="d-block w-100" alt="...">
+                </a>
+                <div class="carousel-caption d-none d-md-block">
+                    <p>Sorter</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="/flood-it">
+                  <img src="img/screenshots/flood-it.png" class="d-block w-100" alt="...">
+                </a>
+                <div class="carousel-caption d-none d-md-block">
+                    <p>Flood it</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="/blackjack">
+                  <img src="img/screenshots/blackjack.png" class="d-block w-100" alt="...">
+                </a>
+                <div class="carousel-caption d-none d-md-block">
+                    <p>Blackjack</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+</div>
+<div class="w-100 d-flex justify-content-center" id="bottom-div">
+    <button id="bottom-button" class="btn p-0">
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="#f8f8ff" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+        </svg>
+    </button>
+</div>
+<script src="js/index.js"></script>

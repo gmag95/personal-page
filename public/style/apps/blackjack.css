@@ -1,0 +1,227 @@
+.card {
+    width: 4.5em;
+    height: 6.5em;
+    background-color: white;
+    padding: 0em 0.1em;
+    display: flex;
+    flex-direction: column;
+    margin: 0.4em 1em;
+    align-self: center;
+}
+
+.logo_top, .number_top {
+    width: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_top {
+    margin-bottom: auto; 
+}
+
+.logo_bottom, .number_bottom {
+    width: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    align-items: center;
+}
+
+.logo_bottom {
+    margin-top: auto; 
+}
+
+#bet_number {
+    width: 4em;
+}
+
+#player_cards, #dealer_cards {
+    background-color: #228b22;
+    border: 0.3em solid #353839;
+    border-radius: 0.5em;
+    min-height: 8em;
+    flex-wrap: wrap;
+    --bs-gutter-x: 0.7em;
+}
+
+#dealer_row, #player_row, #start_row, #decision_row {
+    margin: 1em 0em;
+}
+
+#dealer_row {
+    margin: 0em;
+}
+
+#end_row {
+    margin-bottom: 1em;
+}
+
+#dealer_row, #player_row {
+    font-weight: bold;
+}
+
+
+#decision_row, #end_row, #message_row {
+    display: none;
+}
+
+.hidden_card {
+    background-color: grey;
+    box-sizing: border-box;
+    border: 0.15em solid black;
+}
+
+.hidden {
+    display: none;
+}
+
+#hit_button, #stay_button, #double_button {
+    width: 5em;
+}
+
+#message_row {
+    height: 6em;
+    width: calc(100%*11/12);
+    --bs-gutter-x: 0em;
+    margin-bottom: 1em;
+}
+
+#message_row .col-5, #message_row .col-7, #account_balance, #current_bet {
+    text-align: center;
+}
+
+.added_scroll {
+    --bs-gutter-x: -1em !important;
+}
+
+.message_left {
+    width: calc(100%*4/11);
+}
+
+.message_right {
+    width: calc(100%*7/11);
+}
+
+#home-link {
+    color:#e1e1e1!important;
+    border-bottom: None;
+}
+
+#apps-link {
+    color:#71cda6!important;
+    border-bottom: 0.2em solid #71cda6;
+}
+
+#title{
+    color: #414a4c;
+}
+
+.btn, .btn:hover, .btn:active, .btn:visited {
+    background-color: #515e66!important;
+    color: #e1e1e1!important;
+    border: 0;
+}
+
+@media (max-width: 576px) {
+
+    html, body {
+        background-color: lightgrey;
+    }
+
+    #dealer_row, #player_row, #start_row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #dealer_row > span:first-of-type, #player_row > span:first-of-type {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 0.5em;
+    }
+
+    #dealer_cards, #player_cards {
+        width:90%;
+    }
+
+    #start_row div {
+        width:80%;
+    }
+
+    #start_row div:nth-of-type(2) {
+        margin: 0.5em 0em;
+    }
+
+    #start_row div:last-of-type div {
+        display:none;
+    }
+
+    #decision_row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #decision_row span {
+        width: 9em !important;
+        flex-shrink: 0;
+        text-align: center;
+        margin-bottom:1em;
+    }
+
+    #decision_row div:nth-of-type(2) button {
+        width: 5em !important;
+        flex-shrink: 0;
+    }
+
+    #decision_row div:nth-of-type(2) button:nth-of-type(2) {
+        margin: 0em 0.5em;
+    }
+
+    #decision_row div:last-of-type, #end_row div:last-of-type {
+        display:none;
+    }
+
+    #message_row, #end_row, #end_row div:nth-of-type(3), #end_row {
+        width:100%;
+    }
+
+    #message_row div, #end_row button, #end_row div {
+        text-align: center;
+    }
+
+    #message_row .col-7 {
+        padding-right: 0.5em 0.7em;
+        background-color: #515e66;
+        color: #e1e1e1!important;
+    }
+
+    #message_row .col-5 {
+        padding: 0.5em 0.2em;
+        background-color: #515e66;
+        color: #e1e1e1!important;
+    }
+
+    #message_row {
+        height: 14em;
+        margin:0;
+        margin-bottom: 1em;
+    }
+
+    #end_row .col-7 button {
+        padding: 0em 0.5em;
+        height: 2.5em;  
+    }
+
+    #end_row .col-7 {
+        align-items: center;
+    }
+
+    .card {
+        flex-shrink: 0;
+        margin: 0.4em 0.5em;
+    }
+
+    #apps-link {
+        border-bottom: None;
+    }
+}

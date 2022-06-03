@@ -1,0 +1,106 @@
+body, #main-container {
+    min-height: 100vh;
+    position: relative;
+}
+
+.navbar {
+    background-color: #515e66;
+}
+
+#content-row {
+    flex-grow: 1;
+    background-color: ghostwhite;
+}
+
+#home-link {
+    color:#71cda6!important;
+    border-bottom: 0.2em solid #71cda6;
+}
+
+#home-link:hover, #apps-link:hover, #commenter-link:hover, #analyzer-link:hover {
+    color:#71cda6!important;
+    border-bottom: 0.2em solid #71cda6;
+    transition: 0.3s;
+}
+
+#apps-link:focus {
+    color:#71cda6!important;
+    border-bottom: 0.2em solid #71cda6;
+}
+
+#commenter-link, #analyzer-link, #apps-link, .navbar-brand {
+    color: #e1e1e1!important;
+}
+
+#homepage-title, #homepage-subtitle, .category-title {
+    color: #414a4c;
+}
+
+li a {
+    height: 3rem;
+    line-height: 3rem;
+    padding: 0 1rem!important;
+}
+
+#bottom-shape {
+    width: 100%;
+    background-color: ghostwhite;
+}
+
+.btn, select, select:active, select:focus {
+    transition: None;
+    box-shadow: none!important;
+    outline: none!important;
+    -webkit-box-shadow: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0;
+}
+
+.navbar-toggler {
+    height: 3rem;
+    border:0;
+    color: #e1e1e1;
+}
+
+.navbar-brand {
+    display: none;
+}
+
+#main-container, .app-row {
+    background-color: ghostwhite;
+}
+
+@media (max-width: 576px) {
+
+    #home-link {
+        border-bottom: None;
+    }
+    
+    #home-link:hover, #apps-link:hover, #commenter-link:hover, #analyzer-link:hover, #apps-link:focus {
+        color:#71cda6!important;
+        border-bottom: None!important;
+    }
+
+    .dropdown-menu {
+        background-color: #71cda6;
+        margin-bottom: 1em;
+    }
+
+    .dropdown-menu a {
+        color: #414a4c;
+    }
+
+    .navbar {
+        position:unset;
+    }
+
+    #content-row {
+        margin-top: unset!important;
+    }
+
+    .navbar-brand {
+        display: unset;
+    }
+}

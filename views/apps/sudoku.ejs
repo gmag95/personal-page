@@ -1,0 +1,25 @@
+<% layout("layouts/boilerplate") %>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<link rel="stylesheet" href="style/apps/sudoku.css">
+        <div class="row mt-5" id="title-row">
+            <div class="col d-flex justify-content-center">
+                <h2 id="title" class="py-3">Sudoku</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <table>
+                </table>
+            </div>
+        </div>
+        <div class="row my-3 hidden">
+            <div class="col d-flex justify-content-center">
+                <span id="clock" class="order-3 order-sm-1"></span>
+                <button type="button" class="btn btn-light order-1 order-sm-2" id="solver_button">Autosolver</button>
+                <button type="button" class="btn btn-light order-2 order-sm-3" id="reset_button">Reset game</button>
+            </div>
+        </div>   
+        <div class="row mb-3 justify-content-center" id="end_row">
+            <span class="col-11 col-sm-4 text-center">You won the game</span>
+        </div>
+<script src="js/apps/sudoku.js"></script>

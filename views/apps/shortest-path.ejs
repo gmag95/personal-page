@@ -1,0 +1,29 @@
+<% layout("layouts/boilerplate") %>
+
+<link rel="stylesheet" href="style/apps/shortest-path.css">
+
+        <div class="row mt-5 app-row" id="title-row">
+            <div class="col text-center"><h2 id="title" class="py-3">Shortest path finder</h2></div>
+        </div>
+        <div class="row app-row">
+            <div class="col d-flex justify-content-center">
+                <table id="board"></table>
+            </div>
+        </div>
+        <div class="row my-3 app-row" id="options-row">
+            <div class="col d-flex justify-content-center">
+                <select class="form-select mx-1" id="algo_selector">
+                    <option selected hidden value="0">Algorithm</option>
+                    <option value="1">Lee</option>
+                    <option value="2">Dijkstra</option>
+                    <option value="3">A-star</option>
+                </select>
+                <button class="btn btn-light mx-1" id="start_button">Validate cell</button>
+                <button class="btn btn-light mx-1" id="reset_button">Reset Board</button>
+            </div>
+        </div>
+        <div class="row mb-3 app-row" id="end_row">
+            <div class="col d-flex justify-content-center"></div>
+        </div>
+<script>var exports = {};</script>
+<script type="module" src="/js/apps/shortest-path.js"></script>

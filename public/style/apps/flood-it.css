@@ -1,0 +1,49 @@
+table {
+    empty-cells:show;
+}
+
+#title{
+    color: #414a4c;
+}
+
+#game_guide {
+    color: #212529;
+}
+
+.btn, .btn:hover, .btn:active, .btn:visited {
+    background-color: #515e66!important;
+    color: #e1e1e1!important;
+    border: 0;
+}
+
+#game_guide, #move-counter {
+    font-size: 1.1rem;
+}
+
+#home-link {
+    color:#e1e1e1!important;
+    border-bottom: None;
+}
+
+#apps-link {
+    color:#71cda6!important;
+    border-bottom: 0.2em solid #71cda6;
+}
+
+@media (max-width: 576px) {
+
+    #title-row {
+        margin-top: 0!important;
+    }
+
+    #apps-link {
+        border-bottom: None;
+    }
+}
+
+@media (max-width: 476px) {
+    td {
+        height: 2em !important;
+        width: 2em !important;
+    }
+}

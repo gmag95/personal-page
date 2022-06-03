@@ -1,0 +1,70 @@
+#homepage-subtitle {
+    font-size: 1.2rem;
+}
+
+#application-subtitle {
+    font-size: 1.1rem;
+}
+
+img {
+    width:100px;
+}
+
+.carousel-caption {
+    color:#414a4c;
+}
+
+#bottom-div {
+    position: absolute;
+    margin: 0 auto;
+    bottom: 25px;
+}
+
+#bottom-button {
+    border-radius: 50%;
+    border-width: 0;
+}
+
+#homepage-title, .category-title {
+    font-weight: 600;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+   }
+   
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-caption {
+    bottom: 87.5%;
+}
+
+.carousel-indicators {
+    bottom: 95%;
+}
+
+.carousel-caption p {
+    display: inline;
+    background-color: transparent;
+    padding: 0.5em 1em;
+    border-radius: 0.2em;
+    font-weight: 600;
+    font-size: 1.1em;
+    line-height: 1em;
+}
+
+.carousel-indicators button {
+    background-color: #515e66!important;
+}
+
+.carousel-item img {
+    padding-top: 3rem;
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        padding-top: 0rem;
+    }
+}
