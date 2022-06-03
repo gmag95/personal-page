@@ -1,4 +1,5 @@
 <% layout("layouts/boilerplate") %>
+<title>Sudoku</title>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <link rel="stylesheet" href="style/apps/sudoku.css">
         <div class="row mt-5" id="title-row">
@@ -12,7 +13,7 @@
                 </table>
             </div>
         </div>
-        <div class="row my-3 hidden">
+        <div class="row my-3" id="options-row">
             <div class="col d-flex justify-content-center">
                 <span id="clock" class="order-3 order-sm-1"></span>
                 <button type="button" class="btn btn-light order-1 order-sm-2" id="solver_button">Autosolver</button>

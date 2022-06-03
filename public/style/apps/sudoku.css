@@ -62,7 +62,7 @@ td {
         height:2em;
     }
 
-    .row:nth-of-type(3) {
+    .row:nth-of-type(4) {
         margin-top: 0.5em !important;;
     }
 
@@ -78,7 +78,7 @@ td {
         padding:0.2em 0em;
     }
 
-    .row:nth-of-type(3) .col {
+    .row:nth-of-type(4) .col {
         flex-direction: column;
         align-items:center;
     }
