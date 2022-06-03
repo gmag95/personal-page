@@ -64,7 +64,7 @@
         height: 0.7rem !important;
     }
 
-    .row:nth-of-type(4) .col {
+    #options-row .col {
         flex-direction: column;
         align-items: center;
     }
