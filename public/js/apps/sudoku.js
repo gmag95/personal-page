@@ -74,7 +74,7 @@ function start (payload) {
 
     countBlank();
 
-    document.querySelectorAll(".row")[2].style.display="flex"
+    document.getElementById("options-row").style.setProperty("display", "flex", "important");
 }
 
 function countBlank () {
