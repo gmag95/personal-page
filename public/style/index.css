@@ -59,6 +59,21 @@ img {
     padding-top: 3rem;
 }
 
+.github-logo {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 0.7rem;
+    opacity: 0.69;
+}
+
+.github-logo:hover {
+    opacity: 1;
+}
+
+.category-title {
+    padding-left: 2.2rem;
+}
+
 @media (max-width: 768px) {
     .carousel-item img {
         padding-top: 0rem;
