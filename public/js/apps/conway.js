@@ -41,9 +41,9 @@ async function conway() {
             for (let x=0; x<cell_n; x++) {
 
                 let up = (y!=0 ? (y-1)%cell_n : cell_n-1);
-                let down = (y!=cell_n-1 ? (y+1)%cell_n : 1);
+                let down = (y!=cell_n-1 ? (y+1)%cell_n : 0);
                 let left = (x!=0 ? (x-1)%cell_n : cell_n-1);
-                let right = (x!=cell_n-1 ? (x+1)%cell_n : 1);
+                let right = (x!=cell_n-1 ? (x+1)%cell_n : 0);
 
                 let neighbours_n = 0;
 
