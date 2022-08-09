@@ -108,14 +108,10 @@ function dragFunctionStart () {
 function dragFunction (evt) {
     let base_x=document.board[[0, 0]].getBoundingClientRect().x;
     let base_y=document.board[[0, 0]].getBoundingClientRect().y;
-    let x_scroll=window.scrollX;
-    let y_scroll=window.scrollY;
     let x_client=evt.clientX;
     let y_client=evt.clientY;
-    let selected_x=x_client + x_scroll;
-    let selected_y=y_client + y_scroll;
     let size = document.board[[0, 0]].getBoundingClientRect().height;
-    if (selected_x>base_x + x_scroll && selected_x<document.board[[cell_n-1, cell_n-1]].getBoundingClientRect().right + x_scroll && selected_y>base_y + y_scroll && selected_y<document.board[[cell_n-1, cell_n-1]].getBoundingClientRect().bottom + y_scroll) {
+    if (x_client>base_x && x_client<document.board[[cell_n-1, cell_n-1]].getBoundingClientRect().right && y_client>base_y && y_client<document.board[[cell_n-1, cell_n-1]].getBoundingClientRect().bottom) {
         let coord_x = Math.floor((x_client-base_x)/size);
         let coord_y = Math.floor((y_client-base_y)/size);
         document.board[[coord_y, coord_x]].style.backgroundColor='#778ba5';
