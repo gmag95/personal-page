@@ -42,6 +42,10 @@ app.get("/blackjack", (req, res) => {
     res.render("apps/blackjack");
 })
 
+app.get("/conway", (req, res) => {
+    res.render("apps/conway");
+})
+
 app.all("*", (req, res) => {
     res.render("error");
 })

@@ -1,0 +1,72 @@
+#random_button, #start_button, #reset_button {
+    width: 8em;
+}
+
+#home-link {
+    color:#e1e1e1!important;
+    border-bottom: None;
+}
+
+#apps-link {
+    color:#71cda6!important;
+    border-bottom: 0.2em solid #71cda6;
+}
+
+#title {
+    color: #414a4c;
+}
+
+.btn, .btn:hover, .btn:active, .btn:visited {
+    background-color: #515e66!important;
+    color: #e1e1e1!important;
+    border: 0;
+}
+
+@media (max-width: 576px) {
+    td {
+        width: 1rem !important;
+        height: 1rem !important;
+        font-size: 0.34em !important;
+    }
+
+    .btn {
+        font-size: 0.9em;
+        margin: 0.6em 0em;
+    }
+
+    #title-row {
+        margin-top: 0!important;
+    }
+
+    #apps-link {
+        border-bottom: None;
+    }
+}
+
+@media (max-width: 476px) {
+    td {
+        width: 0.7rem !important;
+        height: 0.7rem !important;
+    }
+
+    #options-row .col {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn:nth-of-type(2) {
+        margin: 0;
+    }
+
+    .btn:first-of-type {
+        margin-top:0;
+    }
+
+    .btn:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .form-select {
+        margin-top: 0;
+    }
+}

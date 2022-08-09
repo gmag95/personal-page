@@ -1,0 +1,20 @@
+<% layout("layouts/boilerplate") %>
+<title>Conway's game of life</title>
+<link rel="stylesheet" href="style/apps/conway.css">
+
+        <div class="row mt-5 app-row" id="title-row">
+            <div class="col text-center"><h2 id="title" class="py-3">Conway's game of life</h2></div>
+        </div>
+        <div class="row app-row">
+            <div class="col d-flex justify-content-center">
+                <table id="board"></table>
+            </div>
+        </div>
+        <div class="row my-3 app-row" id="options-row">
+            <div class="col d-flex justify-content-center">
+                <button class="btn btn-light mx-1" id="random_button">Fill board</button>
+                <button class="btn btn-light mx-1" id="start_button">Start game</button>
+                <button class="btn btn-light mx-1" id="reset_button">Reset board</button>
+            </div>
+        </div>
+<script type="module" src="/js/apps/conway.js"></script>
