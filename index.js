@@ -27,7 +27,7 @@ app.get("/flood-it", (req, res) => {
 })
 
 app.get("/sudoku", (req, res) => {
-    res.render("apps/sudoku");
+    res.render("apps/sudoku", {api_key : process.env.APIKEY});
 })
 
 app.get("/sorter", (req, res) => {

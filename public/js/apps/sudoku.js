@@ -1,4 +1,4 @@
-let data =  undefined;
+let data =  [];
 
 let board = undefined;
 
@@ -14,19 +14,28 @@ let timer=0;
 
 let step_count=0;
 
-async function request () {
-    let res = await axios.get("https://sugoku.herokuapp.com/board?difficulty=easy");
-    return res.data.board;
-}
+const options = {
+    method: 'GET',
+    url: 'https://sudoku-generator1.p.rapidapi.com/sudoku/generate',
+    headers: {
+      'X-RapidAPI-Key': api_key,
+      'X-RapidAPI-Host': 'sudoku-generator1.p.rapidapi.com'
+    }
+  };
 
-request()
+axios.request(options)
 .then((payload) => {start(payload)})
 
 function start (payload) {
 
-    data =  payload;
+    for (let idx = 0; idx < payload.data.puzzle.length; idx++) {
+        if (idx%9==0) {
+            data.push([]);
+        }
+        data[idx < 9 ? 0 : Math.floor(idx/9)].push(payload.data.puzzle[idx].replace(".", "0"))
+    }
 
-    board = JSON.parse(JSON.stringify(data));
+    board = data;
 
     for (let x=0; x<9; x++) {
         let new_row = document.createElement("tr");
